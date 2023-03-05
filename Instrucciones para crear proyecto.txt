@@ -1,0 +1,31 @@
+INSTRUCCIONES PARA CREAR PROYECTO MERN STACK
+
+
+-CREAR CARPETA DEL PROYECTO
+-CREAR CARPETA QUE CONTENDRÁ EL BACK-END
+-EN LA TERMINAL (/carpeta-proyecto/):
+	-npx create-react-app nombre-proyecto
+	-npm start (para observar el front-end)
+
+-En carpeta del backend:
+	-npm init -y
+	-En el archivo package.json agregar despues de "main":"index.js" => "type":"module"
+	-npm i express cors mysql2 sequelize
+	-Crear archivo app.js
+-Dentro de la carpeta del backend crear carpetas: database, controllers, models, routes
+-En Contrtollers:
+	-Crear archivos controladores, ej: BlogController
+-En Database:
+	-Crear archivos de database, ej: db.js
+-En Models:
+	-Archivos .js, ej: BlogModels.js
+-PROGRAMAR
+
+-En carpeta de front:
+	-npm install axios react-router-dom
+	-npm i bootstrap
+	-En src/index.js importar bootstrap: import "bootstrap/dist/css/bootstrap.min.css"
+	-(PARA ICONOS)En cdnjs.com: copy paste el link. Luego en public/index.html pegar el link en <head>. Despues de esto utilizar
+	los iconos de fontawesome
+	-(PARA STYLED-COMPONENTS) npm install styled-components
+	-(REACT-ICONS (FACIL USAR)) npm install react-icons
