@@ -1,0 +1,198 @@
+div,p{
+    margin: 0;
+    padding: 0;
+}
+div#ticket-card,.row#ticket-card{
+    margin: 0;
+    padding: 0;
+}
+.row#ticket-card{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+div .col-logo-content{
+    margin: 0;
+    padding: 0;
+}
+.content-my-account{
+    background-color: white;
+    border-radius: 10px;
+}
+.container-ticket-card#ticket-card{
+    margin: auto;
+    max-width: 800px;
+    max-height: 97px !important;
+    right: 0;
+    border-radius: 7px;
+    border: 1px solid rgb(209, 209, 209);
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.content-tickets{
+    width: 100%;
+}
+.box-tickets{
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+div .row-variado{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    max-height: 95px;
+    display: grid;
+    grid-template-rows: 18px auto auto auto 20px;
+    grid-template-columns: 24px 140px auto auto auto auto 24px;;
+}
+.logo-aerolinea#ticket{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 120px;
+    grid-row: 3;
+    grid-column: 2;
+}
+.img-aerolinea#ticket{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.name-aerolinea#ticket{
+    color:#888;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+p#name-aerolinea{
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    text-align: start;
+    font-size: 14px;
+    padding: 0;
+    display: inline-block;
+    width: calc(80%)
+}
+.ida-ciudades{
+    display: flex;
+    height: 15px;
+    grid-row: 2;
+    grid-column: 3;
+}
+.text-ida,.text-ciudades,.text-hora-salida{
+    color: #888;
+    padding: 0;
+    font-size: 13px;
+}
+.text-ida{
+    font-weight: 550;
+    font-kerning: normal;
+}
+.text-ciudades{
+    margin: 0 0 0 0.25rem
+}
+.fecha-vuelo{
+    margin: 0;
+    padding: 0;
+    grid-row: 3;
+    grid-column: 3;
+    display: flex;
+}
+.text-fecha{
+    display: flex;
+    font-weight: 550 !important;
+    font-family: 'Rubik', Arial , sans-serif;
+    font-size: 100%;
+}
+.hora-vuelo{
+    margin: 0;
+    padding: 0;
+    grid-row: 4;
+    grid-column: 3;
+}
+.text-hora-salida{
+    font-size: 12px;
+}
+.ida-ciudades, .fecha-vuelo, .hora-vuelo{
+    margin-left: 0.5rem;
+}
+.block-costo{
+    display: grid;
+    grid-template-rows: 20px 20px 28px 20px auto;
+    grid-template-columns: 16px auto;
+    border-left: 1px solid rgb(209, 209, 209);
+    height: 100%;
+    margin: 0;
+}
+.d-desde{
+    display: flex;
+    font-size: 14px;
+    height: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 2;
+    grid-column: 2;
+}
+.costo-pasaje{
+    display: flex;
+    font-size: 20px;
+    font-family: Rubik, Arial, sans-serif;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 3;
+    grid-column: 2;
+}
+.ver-info{
+    display: flex;
+    align-items: center;
+    grid-row: 4;
+    grid-column: 2;
+}
+.a-ver-info{
+    font-size: 11px;
+    color: #ff8c40;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+}
+.a-ver-info:hover{
+    color: #ff8c40;
+    cursor: pointer;
+}
+div p#ticket-card{
+    margin: 0;
+    padding: 0;
+}
+.desde{
+    color:#888;
+    font-size: 14px;
+    padding: 0;
+}
+.costo{
+    color: #443
+}
+.desde,.costo{
+    margin:0;
+    padding: 0;
+}

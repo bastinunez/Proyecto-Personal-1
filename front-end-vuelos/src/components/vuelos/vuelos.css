@@ -1,0 +1,424 @@
+.bg-color-primario-page{
+    background-color: #006d77 !important;
+}
+.bg-color-secundario-page{
+    background-color: #FF8C40 !important;
+}
+.text-color-primario-page{
+    color:#006d77 !important;
+}
+.text-color-secundario-page{
+    color:#FF8C40 !important;
+}
+.container#showVuelos{
+    width: 100%;
+}
+
+.container-vuelos{
+    width: 100%;
+    max-width: 1280px;
+}
+.container-title-search{
+    padding: 1rem;
+}
+.box-title-search{
+    padding: 0.5rem;
+    font-family: Rubik,Arial,sans-serif;
+}
+.container-content-vuelos{
+
+}
+.container-filter{
+    padding-left: 1rem;
+}
+.form-box-filter{
+    border-radius: 10px;
+    background-color: #006d77;
+    padding-bottom: 1rem;
+}
+.title-form-filter{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+    font-family: Rubik,Arial,sans-serif;
+    margin-bottom: 2rem;
+}
+
+/*SELECT CIUDADES*/
+.inputGroup {
+    font-family: Rubik,Arial,sans-serif;
+    margin: 1em 0 1em 0;
+    width: 100%;
+    position: relative;
+    padding-top: 0.8rem;
+}
+.inputGroup select {
+    font-size: 100%;
+    padding: 0.5em;
+    padding-left: 1rem;
+    outline: none;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #006d77;
+    border-radius: 20px;
+    width: 100%;
+}
+.inputGroup option {
+    background-color: transparent;
+    width: 100%;
+}
+.inputGroup label {
+    font-size: 100%;
+    left: 2rem;
+    top: 0;
+    position: absolute;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    margin-bottom: 1rem;
+    color: white;
+    margin-left: 0.5em;
+    background-color: #006d77;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    color: white;
+    background-color: #006d77;
+}
+.inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(250, 250, 250);
+}
+/*SELECT CIUDADES*/
+
+/*SELECT FECHAS*/
+.box-select-fechas{
+    width: 100%;
+    padding: 1rem;
+}
+.content-fechas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    background-color: white;
+    font-family: Rubik,Arial,sans-serif;
+    border-radius: 4px;
+}
+.label-fecha{
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    font-size: 12px;
+    height: 100%;
+    color: #8b8b8b;
+}
+.fecha-ida{
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 1px solid #444;
+}
+.box-input-calendar{
+    padding: 0.25rem;
+}
+.calendario-ida{
+    grid-column: 1;
+    grid-row: 2;
+    border-right: 1px solid #444;
+}
+.input-calendar#box-input{
+    border:none;
+    color: #8b8b8b;
+    font-size: 13px;
+    width: 100%;
+    padding-left: 0.5rem;
+}
+.fecha-fin{
+    grid-column: 2;
+    grid-row: 1;
+}
+.calendario-fin{
+    grid-column: 2;
+    grid-row: 2;
+}
+/*SELECT FECHAS*/
+
+/*BUTTON SEARCH*/
+.box-button-search{
+    width: 100%;
+    padding: 1rem;
+}
+.btn-search-vuelos{
+    font-family: Rubik,Arial,sans-serif;
+    font-weight: 500;
+    background-color: #FF8C40;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+}
+/*BUTTON SEARCH*/
+
+/*VUELOS CARD*/
+.container-vuelo-card#vuelo-card{
+    margin: auto;
+    max-width: 800px;
+    max-height: 97px !important;
+    right: 0;
+    border-radius: 7px;
+    border: 1px solid rgb(209, 209, 209);
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.content-vuelos{
+    width: 100%;
+}
+.box-vuelos{
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    background-color: white;
+}
+
+div .row-variado{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    max-height: 95px;
+    display: grid;
+    grid-template-rows: 18px auto auto auto 20px;
+    grid-template-columns: 24px 140px auto auto auto auto 24px;;
+}
+.logo-aerolinea#vuelo{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 120px;
+    grid-row: 3;
+    grid-column: 2;
+}
+.img-aerolinea#vuelo{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.name-aerolinea#vuelo{
+    color:#888;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+p#name-aerolinea{
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    text-align: start;
+    font-size: 14px;
+    padding: 0;
+    display: inline-block;
+    width: calc(80%)
+}
+.ida-ciudades{
+    display: flex;
+    height: 15px;
+    grid-row: 2;
+    grid-column: 3;
+}
+.text-ida,.text-ciudades,.text-hora-salida{
+    color: #888;
+    padding: 0;
+    font-size: 13px;
+}
+.text-ida{
+    font-weight: 550;
+    font-kerning: normal;
+}
+.text-ciudades{
+    margin: 0 0 0 0.25rem
+}
+.fecha-vuelo{
+    margin: 0;
+    padding: 0;
+    grid-row: 3;
+    grid-column: 3;
+    display: flex;
+}
+.text-fecha{
+    display: flex;
+    font-weight: 550 !important;
+    font-family: 'Rubik', Arial , sans-serif;
+    font-size: 100%;
+}
+.hora-vuelo{
+    margin: 0;
+    padding: 0;
+    grid-row: 4;
+    grid-column: 3;
+}
+.text-hora-salida{
+    font-size: 12px;
+}
+.ida-ciudades, .fecha-vuelo, .hora-vuelo{
+    margin-left: 0.5rem;
+}
+.block-costo{
+    display: grid;
+    grid-template-rows: 20px 20px 28px 20px auto;
+    grid-template-columns: 16px auto;
+    border-left: 1px solid rgb(209, 209, 209);
+    height: 100%;
+    margin: 0;
+}
+.d-desde{
+    display: flex;
+    font-size: 14px;
+    height: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 2;
+    grid-column: 2;
+}
+.costo-pasaje{
+    display: flex;
+    font-size: 20px;
+    font-family: Rubik, Arial, sans-serif;
+    align-items: center;
+    justify-content: flex-start;
+    grid-row: 3;
+    grid-column: 2;
+}
+.ver-info{
+    display: flex;
+    align-items: center;
+    grid-row: 4;
+    grid-column: 2;
+}
+.a-ver-info{
+    font-size: 11px;
+    color: #ff8c40;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: bold;
+}
+.a-ver-info:hover{
+    color: #ff8c40;
+    cursor: pointer;
+}
+div p#vuelo-card{
+    margin: 0;
+    padding: 0;
+}
+.desde{
+    color:#888;
+    font-size: 14px;
+    padding: 0;
+}
+.costo{
+    color: #443
+}
+.desde,.costo{
+    margin:0;
+    padding: 0;
+}
+/*VUELOS CARD*/
+
+/*MODAL-DIALOG*/
+.modal-size{
+    width: 700 !important;
+    max-width: 700px !important;
+}
+.container-info{
+    width: 100%;
+    font-family: Rubik, Arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.info-equipaje{
+    display: flex;
+}
+.box-backpack {
+    width: 35px;
+}
+.icon-equipaje{
+    width: 100%;
+    height: 100%;
+    color: #006d77;
+}
+.luggage-item-content{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.luggage-item-title{
+    color: #006d77;
+    width: 100%;
+}
+.luggage-item-description{
+    width: 100%;
+}
+.info-aerolinea-modal{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.img-aerolinea#modal{
+    width: auto;
+    height: 35px;
+    color: #006d77;
+}
+.name-aerolinea#modal{
+
+}
+.name-aerolinea-modal{
+
+    font-size: 20px;
+}
+.info-hora-wrapper{
+    display: flex;
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+}
+.show-day-modal{
+    font-size: 12px;
+}
+.show-time-modal{
+    font-size: 30px;
+    font-weight: 600;
+    color: #444;
+}
+.show-city-modal{
+    font-size: 13px;
+    font-weight: 600;
+}
+.show-costo-modal{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+/*MODAL-DIALOG*/

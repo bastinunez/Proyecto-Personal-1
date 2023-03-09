@@ -1,0 +1,109 @@
+.menu .login {
+    text-align: center;
+}
+.d-none {
+    display: none !important;
+}
+.col-sm-4, .col-md-4, .col-md-4, .col-md-4{
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.visita {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+div {
+    display: block;
+}
+.menu .login a {
+    text-transform: uppercase;
+    color: #000 !important;
+    position: relative;
+    background: transparent;
+}
+.menu .login a {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin: 0px 1rem;
+}
+a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+.menu .login a:before {
+    content: "";
+    width: 0px;
+    height: 3px;
+    border-radius: 10px;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-user {
+    font-size: 28px;
+    vertical-align: top;
+    clear: both;
+    margin-top: -5px;
+}
+.user-ico {
+    visibility: visible;
+    margin-right: 0.5rem;
+}
+i {
+    font-style: italic;
+}
+.fa-user:before {
+    content: "\f007";
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+.dropdown-menu#dropdown{
+    border-radius: 0;
+    width: 100%;
+    /* background-color: #006d77; */
+}
+.cerrar-sesion{
+    color: #EFEFEF;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    margin: auto;
+}
+.cerrar-sesion:hover{
+    color: #fff;
+}
+a[data-opcion="mi-cuenta"] {
+    font-weight: 550;
+}
+li#dropdown-cuenta{
+    font-size: 14px !important;
+}
