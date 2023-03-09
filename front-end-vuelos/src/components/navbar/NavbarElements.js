@@ -214,7 +214,7 @@ export function NavMiCuenta() {
     <div
       id="button-cerrar-sesion"
       className="cerrar-sesion"
-      style={{ display: "none" }}
+      style={{ display: "flex" }}
     >
       <div className="dropdown">
         <div className="btn-mi-cuenta dropdown-toggle" type="button">

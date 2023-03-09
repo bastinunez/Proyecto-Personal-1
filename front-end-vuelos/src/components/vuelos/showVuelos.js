@@ -37,22 +37,22 @@ export function VuelosList(){
     }
 
     useEffect(() => {
-        editBusqueda(location.state.info);
+        editBusqueda(info);
         getVuelos();
-    },[]); //ESTO SE ACTUALIZARA CUANDO INFO CAMBIE
+    },[info]); //ESTO SE ACTUALIZARA CUANDO INFO CAMBIE
     const getVuelos = async () => {
         const res = await axios.get(`${URI_vuelos+"codvuelo/"+info.originCity+"/"+info.destinationCity+"/"+info.dateIn+"/"+info.dateOut}`);
         editVuelos(res.data);
     };
 
     function recopilarDatos(e){
-        editBusqueda({
+        e.preventDefault();
+        setInfo({
             originCity: origen,
             destinationCity : destino,
             dateIn : fechaIda,
             dateOut : fechaVuelta
         });
-        e.preventDefault()
     }
 
     return(

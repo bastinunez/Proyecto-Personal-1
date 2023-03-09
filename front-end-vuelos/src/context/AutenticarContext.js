@@ -15,13 +15,13 @@ const AutenticarProvider =  ({children}) => {
 
     const handleAuth = (e) => {
         if (auth){
-            setAuth(null)
+            setAuth(null);
         }else{
-            setAuth(true)
+            setAuth(true);
         }
     }
     const editUser = (data) => {
-        setUser(data)
+        setUser(data);
     }
 
     const data= {auth,handleAuth, user, editUser};

@@ -38,15 +38,9 @@ export const InicioCesion = ({boolCompra,codviaje}) => {
                     alert("el usuario o contraseña incorrecta")
                 }
                 else{
-                    handleAuth()
-                    editUser({name: response.data.nombre, pais: response.data.pais, pasaporte: response.data.pasaporte})
-                    if(boolCompra){
-                        navigate("/comprar-ticket",{state:{codviaje:codviaje}})
-                    }
-                    else{
-                        navigate("/")
-                    }
-                    
+                    handleAuth();
+                    editUser({name: response.data.nombre, pais: response.data.pais, pasaporte: response.data.pasaporte});
+                    navigate("/");
                 }
             })
     }

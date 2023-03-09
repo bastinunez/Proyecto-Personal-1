@@ -21,13 +21,7 @@ export function activarDivCuenta(){
 
 function HomeList({prop}){
     const {user, auth} = useContext(AutenticarContext);
-
     document.title = "Inicio"
-    useEffect((e) => {
-        if(auth){
-            activarDivCuenta(auth);
-        }
-    }, [auth]);
     
     return(
     <div className="container-fluid m-0 p-0">

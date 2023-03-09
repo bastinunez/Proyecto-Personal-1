@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import {
   Nav,
   NavLink,
@@ -11,8 +11,10 @@ import {
 import { NavLink as NavLink2, NavLink3 } from "./NavbarElements";
 //import { NavLink } from "react-router-dom";
 import { MdOutlineAirplaneTicket } from "react-icons/md";
+import AutenticarContext from "../../context/AutenticarContext";
 
 const Navbar = () => {
+  const {auth} = useContext(AutenticarContext);
   return (
     <>
       <Nav id="navbar">
@@ -87,7 +89,38 @@ const Navbar = () => {
           >
             Contact us
           </NavLink>
-          <NavLink 
+          {auth? 
+          <>
+            <NavMiCuenta></NavMiCuenta>
+          </>
+          :
+          <>
+            <NavLink 
+            id="button-sign-up"
+            to="/sign-up"
+            style={({ isActive }) =>
+              isActive
+                ? {
+                    color: "#0dcaf0",
+                    padding: "0 1rem",
+                    textDecoration: "none",
+                  }
+                : {
+                    color: "#fff",
+                    display: "flex",
+                    alignItems: "center",
+                    textDecoration: "none",
+                    padding: "0 1rem",
+                    height: "100%",
+                    cursor: "pointer",
+                  }
+              }
+            >
+              Sign up
+            </NavLink>
+            <NavButtonLink to="/sign-in" id="button-sign-in">Registrarse</NavButtonLink>
+          </>}
+          {/* <NavLink 
             id="button-sign-up"
             to="/sign-up"
             style={({ isActive }) =>
@@ -112,7 +145,7 @@ const Navbar = () => {
             Sign up
           </NavLink>
           <NavButtonLink to="/sign-in" id="button-sign-in">Registrarse</NavButtonLink>
-          <NavMiCuenta></NavMiCuenta>
+          <NavMiCuenta></NavMiCuenta> */}
         </NavMenu>
       </Nav>
     </>
