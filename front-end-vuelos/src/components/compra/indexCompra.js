@@ -124,14 +124,25 @@ export function BuyTicket({codviaje}){
                                                             <div id="collapseOne" className="panel-collapse collapse container-collapse">
                                                                 <div className='container-form-debito'>
                                                                     <div className='input-type-bank'>
-                                                                        <select id="banks" defaultValue={'DEFAULT'}  className="form-select mx-auto" aria-label="Default select example">
-                                                                            <option className='h-100' value="DEFAULT" disabled>BANCO</option>
-                                                                            <option value={"Estado"}>ESTADO</option>
-                                                                            <option value={"Scotiabank"}>SCOTIABANK</option>
-                                                                            <option value={"Santander"}>SANTANDER</option>
+                                                                        <select id="banks" defaultValue={'DEFAULT'}  className=" mx-auto" aria-label="Default select example">
+                                                                            <option value="DEFAULT" disabled>BANCO</option>
+                                                                            <option value={"ESTADO"}>ESTADO</option>
+                                                                            <option value={"SCOTIABANK"}>SCOTIABANK</option>
+                                                                            <option value={"SANTANDER"}>SANTANDER</option>
                                                                             <option value={"BCI"}>BCI</option>
                                                                             <option value={"BANCO CHILE"}>BANCO DE CHILE</option>
                                                                         </select>
+                                                                    </div>
+                                                                    <div className='input-type-account'>
+                                                                        <select id="type-account" defaultValue={'DEFAULT'}  className="mx-auto" aria-label="Default select example">
+                                                                            <option value="DEFAULT" disabled>TIPO CUENTA</option>
+                                                                            <option value={"VISTA"}>VISTA</option>
+                                                                            <option value={"CORRIENTE"}>CORRIENTE</option>
+                                                                            <option value={"AHORRO"}>AHORRO</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div className='input-number-account'>
+                                                                        <input type="text" placeholder='NUMERO DE CUENTA'></input>
                                                                     </div>
                                                                 </div>
                                                             </div>

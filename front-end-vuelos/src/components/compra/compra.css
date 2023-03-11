@@ -44,19 +44,36 @@
 
 
 /*COMPRA*/
+.form-check{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
 .container-collapse{
     margin-left: 0.5rem;
-    padding: 1rem;
+    height: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 .container-form-debito{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 60% 50%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    gap: 10%;
 }
 .input-type-bank{
     grid-column: 1;
     height: 40px;
     grid-row: 1;
+}
+.input-type-account{
+    grid-column: 2;
+    height: 40px;
+    grid-row: 1;
+}
+.input-number-account{
+    grid-column: 1;
+    grid-row: 2;
 }
 /*COMPRA*/
 
