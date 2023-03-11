@@ -42,7 +42,30 @@
     color: white;
 }
 
+
+/*COMPRA*/
+.container-collapse{
+    margin-left: 0.5rem;
+    padding: 1rem;
+}
+.container-form-debito{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 50%;
+}
+.input-type-bank{
+    grid-column: 1;
+    height: 40px;
+    grid-row: 1;
+}
+/*COMPRA*/
+
+
 /*INICIO*/
+
+.show{
+    display: block !important;
+}
 * {
     box-sizing: border-box;
 }

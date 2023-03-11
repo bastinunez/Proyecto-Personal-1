@@ -1,5 +1,6 @@
 import AutenticarContext from '../../context/AutenticarContext.js'
 import React ,{ useRef, useState, useEffect, useContext} from "react";
+import $, { event } from "jquery";
 import axios from "axios";
 import {TiTicket} from 'react-icons/ti'
 import "./compra.css";
@@ -66,6 +67,31 @@ export function BuyTicket({codviaje}){
         })
     }
 
+    $(function (){
+        $("input[name='inlineRadioOptions']").on("click",function () {
+            var checkedValue = $("input[name='inlineRadioOptions']:checked").val();
+            $("#collapseOne").removeClass('show');
+            $("#collapseTwo").removeClass('show');
+            $("#collapseTres").removeClass('show');
+            if (checkedValue == "option1") {
+                // $("#collapseOne").removeClass('hide');
+                $("#collapseOne").addClass('show');
+                // $("#collapseTwo").removeClass('show');
+                // $("#collapseTwo").addClass('hide');
+            } else if (checkedValue == "option2") {
+                // $("#collapseOne").removeClass('show');
+                // $("#collapseOne").addClass('hide');
+                // $("#collapseTwo").removeClass('hide');
+                $("#collapseTwo").addClass('show');
+    
+            } else if (checkedValue == "option3"){
+                $("#collapseTres").addClass('show');
+            }
+        });
+    })
+    
+    
+
     return(<>
         {auth ? 
         <>
@@ -86,41 +112,53 @@ export function BuyTicket({codviaje}){
                                 </div>
                                 <div className="border-bottom">
                                         <div>
-                                            <div>
-                                            <   div className="form-check">
+                                            <div className=''>
+                                                <h5 className='p-1 ps-3 m-0'>Formas de pago</h5>
+                                                <div className="form-check">
                                                     <ul className="m-0">
-                                                        <li>    
-                                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio1"/>
-                                                            <label className="form-check-label" htmlFor="flexRadio1" >
-                                                                Tarjeta Crédito
-                                                            </label>
-                                                            <div className="collapse collapse-function" id="collapseExample">
-                                                                <div className="card card-body">
-                                                                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>    
-                                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio2"/>
-                                                            <label className="form-check-label" htmlFor="flexRadio2">
+                                                        <li>
+                                                            <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                                                            <label className="form-check-label" htmlFor="inlineRadio1">
                                                                 Tarjeta Débito
                                                             </label>
-                                                            <div className="collapse collapse-function" id="collapseExample">
-                                                                <div className="card card-body">
-                                                                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                                            <div id="collapseOne" className="panel-collapse collapse container-collapse">
+                                                                <div className='container-form-debito'>
+                                                                    <div className='input-type-bank'>
+                                                                        <select id="banks" defaultValue={'DEFAULT'}  className="form-select mx-auto" aria-label="Default select example">
+                                                                            <option className='h-100' value="DEFAULT" disabled>BANCO</option>
+                                                                            <option value={"Estado"}>ESTADO</option>
+                                                                            <option value={"Scotiabank"}>SCOTIABANK</option>
+                                                                            <option value={"Santander"}>SANTANDER</option>
+                                                                            <option value={"BCI"}>BCI</option>
+                                                                            <option value={"BANCO CHILE"}>BANCO DE CHILE</option>
+                                                                        </select>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li>    
-                                                            <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadio3"/>
-                                                            <label className="form-check-label" htmlFor="flexRadio3">
+                                                        <li>
+                                                            <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
+                                                            <label className="form-check-label" htmlFor="inlineRadio2">
+                                                                Tarjeta Credito
+                                                            </label>
+                                                            <div id="collapseTwo" className="panel-collapse collapse container-collapse">
+                                                                collapse 2
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"/>
+                                                            <label className="form-check-label" htmlFor="inlineRadio3">
                                                                 Webpay
                                                             </label>
+                                                            <div id="collapseTres" className="panel-collapse collapse container-collapse">
+                                                                collapse 3
+                                                            </div>
                                                         </li>
                                                     </ul>
                                                     
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                 </div>
                                 <div className="w-100">
