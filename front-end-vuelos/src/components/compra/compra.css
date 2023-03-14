@@ -61,18 +61,60 @@
     grid-template-rows: 45% 45%;
     gap: 10%;
 }
-.input-type-bank{
+.cont-input-type-bank{
     grid-column: 1;
     height: 40px;
     grid-row: 1;
 }
-.input-type-account{
+.cont-input-type-account{
     grid-column: 2;
     height: 40px;
     grid-row: 1;
 }
-.input-number-account{
+.cont-input-number-account{
     grid-column: 1;
+    grid-row: 2;
+}
+.input-compra-tarjetas{
+    max-height: 23px;
+    width: 100%;
+}
+.cont-inputs-cvv-date-valdiation{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    gap: 10%;
+}
+.cont-input-number-cvv{
+    width: 40%;
+}
+.cont-input-validation-date{
+    width: 40%;
+}
+.container-form-credito{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    gap: 10%;
+}
+.cont-inputs-bank-type{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    gap: 10%;
+}
+.cont-input-type-account-credit{
+    grid-column: 2;
+    grid-row: 1;
+}
+.cont-inputs-cvv-date-validation-credit{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    gap: 10%;
+}
+.cont-cuotas{
+    grid-column: 2;
     grid-row: 2;
 }
 /*COMPRA*/
